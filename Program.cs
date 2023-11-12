@@ -5,38 +5,7 @@
     {
         public static void Run()
         {
-            string str = "abcdefghijklmnopqrstuvwxyz";
-
-            while (true)
-            {
-                Console.Write("Enter a letter from the alphabet (or 'q' to quit): ");
-                string input = Console.ReadLine();
-
-                if (input == "q")
-                {
-                    Console.WriteLine("Task 1 was closed.");
-                    break;
-                }
-
-                if (input.Length != 1)
-                {
-                    Console.WriteLine("Please enter only one letter.");
-                    continue;
-                }
-
-                char found = input[0];
-
-                if (str.Contains(found))
-                {
-                    int index = str.IndexOf(found);
-
-                    Console.WriteLine("Index of letter '{0}' is {1}", Char.ToUpper(found), index + 1);
-                }
-                else
-                {
-                    Console.WriteLine("Symbol '{0}' is not in the alphabet!", found);
-                }
-            }
+            Console.WriteLine("Task 1 was removed!");
         }
     }
 
